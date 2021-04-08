@@ -1,0 +1,74 @@
+/*
+ * File: style.css
+ * Created: Thursday April 8th 2021
+ * Author: Thomas vanBommel
+ * 
+ * Last Modified: Thursday April 8th 2021 2:46pm
+ */
+
+/** Reset ----------------------------------------------------------------------------------------*/
+*{
+    margin:0;
+    padding:0;
+    font-family: monospace;
+}
+
+/** Base -----------------------------------------------------------------------------------------*/
+:root{
+    --margin: 1rem;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin:var(--margin);
+}
+
+/** Main -----------------------------------------------------------------------------------------*/
+main{
+    width:calc(100vw - var(--margin) * 2);
+    height:calc(100vh - var(--margin) * 2);
+    display:flex;
+    flex-direction: column;
+}
+
+/** Header ---------------------------------------------------------------------------------------*/
+header{
+    display:flex;
+    flex:0;
+}
+
+header .spacer{
+    flex:1;
+}
+
+header img{
+    height:2rem;
+}
+
+/** Map ------------------------------------------------------------------------------------------*/
+#map{
+    width:calc(100vw - var(--margin) * 2);
+    flex:1;
+    /* height:60vh; */
+    margin:0 auto;
+}
+
+/** Map ------------------------------------------------------------------------------------------*/
+#tools{
+    flex:0;
+    margin:calc(var(--margin) / 2) 0;
+}
+
+#info{
+    margin:var(--margin);
+    box-sizing: border-box;
+}
+
+/** Footer ---------------------------------------------------------------------------------------*/
+footer{
+    flex:0;
+    opacity: 0.5;
+}
